@@ -1,4 +1,4 @@
- radius：freeradius-3.0.4-6.el7.x86_64、freeradius-ldap-3.0.4-6.el7.x86_64、freeradius-utils-3.0.4-6.el7.x86_64(后两个是依赖包)
+ radius：freeradius-3.0.4-6.el7.x86_64、freeradius-ldap-3.0.4-6.el7.x86_64、freeradius-utils-3.0.4-6.el7.x86_64(the last two packages are rely-package)
  deploy step:
  etc/raddb/mods-available/ldap
  1)ldap {
@@ -6,7 +6,7 @@
   port = 389 /default if use ssl ,please change the port number
   identity = "admin"
   password = "admin -password"
-  base_dn = "search branch" #若想控制认证的范围，可以修改这行的搜索范围
+  base_dn = "search branch" #if your position is changed in server ,yon can change search area here. 
 }
 user {
     base_dn = "${..base_dn}"
