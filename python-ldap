@@ -54,7 +54,7 @@ class LDAPtool():
             print 'username none exist'
  
 
-search dn of the user with username the form offered,one dn includes all information related to the user  
+//search dn of the user with username the form offered,one dn includes all information related to the user  
     def ldap_search_dn(self, uid=None):
         obj = self.ldapconn
         obj.protocal_version = ldap.VERSION3
